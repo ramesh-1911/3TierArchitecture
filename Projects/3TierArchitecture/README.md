@@ -50,9 +50,9 @@ Task: Instead of three Security Group create Five Security Groups
 ## 10. Command to Login to App Server
 
 ```bash
-vi LearnWithMithran.pem
-chmod 400 LearnWithMithran.pem
-ssh -i LearnWithMithran.pem ec2-user@10.0.4.162
+vi project.pem
+chmod 400 project.pem
+ssh -i project.pem ec2-user@10.0.4.162
 ```
 
 ## 11. Setup Database
@@ -107,13 +107,3 @@ touch index.html script.js styles.css
 - Create an **A record** with alias pointing to the Frontend Load Balancer.
 
 ## 16. Attach ACM Certificate to Load Balancer
-
----
-
-### Tasks to be completed
-
-- [ ] Instead of three Security Group create Five Security Group
-- [ ] Create a Internal Load Balancer for AppServer
-- [ ] Create a AutoScaling for Webserver & Appserver
-- [ ] Using Cloudcraft/draw.io Draw a Three tier Diagram
-- [ ] Read the 4 Part DR strategies document [Click Me](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-i-strategies-for-recovery-in-the-cloud/)
